@@ -50,7 +50,7 @@ int main(void)
 	}
 	fclose(pont_arq);
 	strcat(nome2,".txt");
-	pont_arq = fopen("dec.txt", "wt");  // Cria um arquivo texto para gravação
+	pont_arq = fopen(nome2, "wt");  // Cria um arquivo texto para gravação
 	if (pont_arq == NULL) // Se nào conseguiu criar
 	{
 		printf("Problemas na CRIACAO do arquivo\n");
